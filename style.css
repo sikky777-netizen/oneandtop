@@ -2,3 +2,9 @@
 /* Hero heading: maintain intentional two-line layout on desktop */
 @media(min-width:801px){.heroText{max-width:1200px;width:100%;padding:6vw 7vw}.heroText h1{font-size:clamp(32px,3.7vw,54px);letter-spacing:-.045em;word-break:keep-all;line-height:1.25}}
 @media(max-width:800px){.heroText h1{font-size:clamp(29px,6vw,43px);word-break:keep-all;letter-spacing:-.04em}}
+
+/* Prevent awkward wrapping in About and Project section headings */
+#about h2{word-break:keep-all;letter-spacing:-.045em;font-size:clamp(30px,3.5vw,48px)}
+#projects h2{word-break:keep-all;letter-spacing:-.045em;font-size:clamp(30px,3.5vw,48px)}
+@media(min-width:801px){#about.split{grid-template-columns:minmax(380px,1fr) 1.2fr;gap:45px}}
+@media(max-width:800px){#about h2,#projects h2{font-size:clamp(28px,6vw,40px)}}
